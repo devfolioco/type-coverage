@@ -26,6 +26,7 @@ function collectAny(node: ts.Node, context: FileContext, kind: FileAnyInfoKind) 
 }
 
 function collectNotAny(node: ts.Node, { file, sourceFile, typeCheckResult, debug }: FileContext, type: ts.Type) {
+  console.log("HELLO")
   if(file.endsWith('.js')) {
     return
   }
