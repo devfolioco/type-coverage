@@ -1,5 +1,5 @@
 {
-  "name": "type-coverage-core",
+  "name": "@preetjdp/type-coverage-core",
   "version": "2.14.8",
   "description": "A library to check type coverage for typescript code",
   "main": "dist/index.js",

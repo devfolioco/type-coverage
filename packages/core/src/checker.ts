@@ -26,6 +26,9 @@ function collectAny(node: ts.Node, context: FileContext, kind: FileAnyInfoKind) 
 }
 
 function collectNotAny(node: ts.Node, { file, sourceFile, typeCheckResult, debug }: FileContext, type: ts.Type) {
+  if(file.endsWith('.js')) {
+    return
+  }
   typeCheckResult.correctCount++
   if (debug) {
     const { line, character } = ts.getLineAndCharacterOfPosition(sourceFile, node.getStart(sourceFile))
